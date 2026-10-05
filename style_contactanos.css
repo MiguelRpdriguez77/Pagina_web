@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+header {
+    background-color: oklch(21% .034 264.665);
+    display: flex;
+    padding: 20px 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    color: white;
+    font-size: 24px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: lightgray;
+}
+
+main {
+    padding: 50px 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+p {
+    color: #d1d5db;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #f3f4f6;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    background-color: oklch(22% .034 264.665);
+    border: 1px solid oklch(30% .034 264.665);
+    border-radius: 6px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus, textarea:focus {
+    border-color: white;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    padding: 12px;
+    background-color: white;
+    color: oklch(17% .034 264.665);
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e5e7eb;
+}
+
+.info-empresa {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid oklch(25% .034 264.665);
+}
+
+.info-empresa h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.info-empresa ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.info-empresa li {
+    font-size: 14px;
+    color: #d1d5db;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+footer {
+    background-color: oklch(21% .034 264.665); 
+    padding: 25px 20px;
+    margin-top: auto; 
+    border-top: 1px solid oklch(25% .034 264.665);
+}
+
+.footer-contenido {
+    text-align: center; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-contenido p {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 0;
+}

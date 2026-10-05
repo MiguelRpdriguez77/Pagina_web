@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: oklch(20% 0.034 264.665);
+    color: white;
+    background-image: url("https://images.unsplash.com/photo-1719906238389-82415b2ff612?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9uZG8lMjBkZSUyMHBhbnRhbGxhJTIwZGUlMjBjb2NoZSUyMG9zY3Vyb3xlbnwwfHwwfHx8MA%3D%3D");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+header {
+    background-color: oklch(21% .034 264.665);
+    display: flex;
+    padding: 20px 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    color: white;
+    font-size: 24px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: lightgray;
+}
+
+main {
+    padding: 120px 60px;
+    max-width: 650px;
+}
+
+main h2 {
+    font-size: 65px;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+main p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    line-height: 1.4;
+    color: #e5e5e5;
+}
+
+.contenedor-botones {
+    display: flex;
+    gap: 20px;
+}
+
+.btn1, .btn2 {
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    border-radius: 6px;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn1 {
+    background-color: white;
+    color: black;
+}
+
+.btn2 {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.btn1:hover, .btn2:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    main {
+        padding: 60px 20px;
+    }
+
+    main h2 {
+        font-size: 40px;
+    }
+
+    .contenedor-botones {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn1, .btn2 {
+        width: 100%;
+    }
+}
+
+footer {
+    background-color: oklch(21% .034 264.665); 
+    padding: 25px 20px;
+    margin-top: auto; 
+    border-top: 1px solid oklch(25% .034 264.665);
+}
+
+.footer-contenido {
+    text-align: center; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-contenido p {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 0;
+}

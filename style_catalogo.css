@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: black;
+    
+}
+
+header {
+    background-color: oklch(21% .034 264.665);
+    display: flex;
+    padding: 20px 40px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+header h1 {
+    color: white;
+    font-size: 24px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: lightgray;
+}
+
+main {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+main h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.cuadricula-autos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+article {
+    width: 350px;
+    border: 1px solid lightgray;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+article img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    background-color: whitesmoke;
+}
+
+article h3 {
+    margin: 20px 20px 10px 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.precio {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin: 0 20px 20px 20px;
+}
+
+.acciones-auto {
+    display: flex;
+    gap: 10px;
+    margin: auto 20px 20px 20px;
+}
+
+.btn-detalles, .btn-comprar {
+    flex: 1;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border: none;
+}
+
+.btn-detalles {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.btn-comprar {
+    background-color: white;
+    color: black;
+}
+
+.btn-detalles:hover, .btn-comprar:hover {
+    transform: translateY(-4px);
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    main {
+        padding: 40px 20px;
+    }
+
+    article {
+        width: 100%;
+    }
+}
+
+footer {
+    background-color: oklch(21% .034 264.665); 
+    padding: 25px 20px;
+    margin-top: auto; 
+    border-top: 1px solid oklch(25% .034 264.665);
+}
+
+.footer-contenido {
+    text-align: center; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-contenido p {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 0;
+}
