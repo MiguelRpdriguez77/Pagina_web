@@ -139,7 +139,7 @@ button:hover {
 footer {
     background-color: oklch(21% .034 264.665); 
     padding: 25px 20px;
-    margin-top: auto; 
+    margin-top: 200px; 
     border-top: 1px solid oklch(25% .034 264.665);
 }
 
